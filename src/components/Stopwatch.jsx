@@ -12,10 +12,10 @@ class Stopwatch extends React.Component {
             lastTick: 0
         };
 
+        this.tick = this.tick.bind(this);
         this.handleStart = this.handleStart.bind(this);
         this.handlePause = this.handlePause.bind(this);
         this.handleStop = this.handleStop.bind(this);
-        this.tick = this.tick.bind(this);
     }
 
     componentDidMount() {
